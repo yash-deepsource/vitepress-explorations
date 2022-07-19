@@ -1,1 +1,5 @@
+---
+layout: doc
+---
+
 # Hello VitePress
