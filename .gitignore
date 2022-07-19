@@ -1,0 +1,9 @@
+# pnpm
+node_modules
+.pnpm-debug.log
+
+# vitepress
+docs/.vitepress/dist
+
+# Da store
+.DS_Store
