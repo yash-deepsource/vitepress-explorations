@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { fileURLToPath, URL } from "url";
 import Icons from "unplugin-icons/vite";
 
 export default defineConfig({
@@ -13,5 +14,10 @@ export default defineConfig({
         compiler: "vue3",
       }),
     ],
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("../../docs", import.meta.url)),
+      },
+    },
   },
 });

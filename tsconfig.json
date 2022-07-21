@@ -1,7 +1,21 @@
 {
+  "include": [
+    "docs/**/*"
+  ],
   "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
     "types": [
       "unplugin-icons/types/vue",
-    ]
+    ],
+    "paths": {
+      "@/*": [
+        "./docs/*"
+      ]
+    },
   }
 }

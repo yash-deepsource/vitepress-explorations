@@ -7,6 +7,8 @@ import IconActivity from '~icons/lucide/activity'
 </script>
 
 
-# Let's get started with Vitepress
+# <icon-activity style="display: inline;" /> Let's get started with Vitepress
 
-<icon-activity style="display: inline;" /> Activity
+<div class="mt-5 animate-bounce">
+Bouncy text
+</div>
