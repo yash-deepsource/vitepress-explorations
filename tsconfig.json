@@ -3,6 +3,7 @@
     "docs/**/*"
   ],
   "compilerOptions": {
+    "jsx": "preserve",
     "lib": [
       "esnext",
       "dom",
@@ -11,6 +12,7 @@
     ],
     "types": [
       "unplugin-icons/types/vue",
+      "@types/node"
     ],
     "paths": {
       "@/*": [

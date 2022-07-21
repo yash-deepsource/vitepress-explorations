@@ -4,6 +4,12 @@ layout: doc
 
 <script setup>
 import IconActivity from '~icons/lucide/activity'
+
+// Image components
+import ZImage from '@/components/ZImage.vue'
+
+// image
+import BoatyBoi from '@/assets/images/boaty-boi.jpg?preset=defaultHd'
 </script>
 
 
@@ -12,3 +18,12 @@ import IconActivity from '~icons/lucide/activity'
 <div class="mt-5 animate-bounce">
 Bouncy text
 </div>
+
+
+### As markdown
+
+![Boaty boi](assets/images/boaty-boi.jpg)
+
+### As image tag
+
+<z-picture :srcs="BoatyBoi"/>
