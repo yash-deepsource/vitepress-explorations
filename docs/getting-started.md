@@ -6,7 +6,7 @@ layout: doc
 import IconActivity from '~icons/lucide/activity'
 
 // Image components
-import ZImage from '@/components/ZImage.vue'
+import ZPicture from '@/components/ZPicture.vue'
 
 // image
 import BoatyBoi from '@/assets/images/boaty-boi.jpg?preset=defaultHd'
