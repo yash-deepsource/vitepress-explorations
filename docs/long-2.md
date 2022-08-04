@@ -661,34 +661,6 @@ data to DeepSource.
 For reporting test coverage to DeepSource from inside the container which runs
 tests, just pass some environment variables to the container using the `--env/-e` flag.
 
-<code-group>
-  <code-block label="Github Actions" active>
-
-  ```docker
-  docker run -e DEEPSOURCE_DSN -e GITHUB_ACTIONS -e GITHUB_REF -e GITHUB_SHA ...
-  ```
-  </code-block>
-
-  <code-block label="Travis CI">
-
-  ```docker
-  docker run -e DEEPSOURCE_DSN -e USER -e TRAVIS_PULL_REQUEST_SHA ...
-  ```
-  </code-block>
-
-  <code-block label="Others">
-
-  ```docker
-  # Export the latest git commit hash as an environment variable
-  export GIT_COMMIT_SHA=$(git --no-pager rev-parse HEAD | tr -d '\n')
-
-  # Pass the exported environment variable to the container in which tests
-  # need to be run
-  docker run -e DEEPSOURCE_DSN -e GIT_COMMIT_SHA ...
-  ```
-  </code-block>
-</code-group>
-
 ### Outside the Docker container
 
 The test coverage report can also be reported by copying it from the Docker container
