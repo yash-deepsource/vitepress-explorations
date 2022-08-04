@@ -10,6 +10,40 @@ export default defineConfig({
   description: "Just playing around.",
   lang: "en-US",
   lastUpdated: true,
+  themeConfig: {
+    sidebar: [
+      {
+        text: "Short pages",
+        items: [
+          { text: "Home", link: "/" },
+          { text: "Short 1", link: "/short-1" },
+          { text: "Short 2", link: "/short-2" },
+        ],
+      },
+      {
+        text: "Medium pages",
+        items: [
+          { text: "Medium 1", link: "/medium-1" },
+          { text: "Medium 2", link: "/medium-2" },
+          { text: "Medium 3", link: "/medium-3" },
+        ],
+      },
+      {
+        text: "Long pages",
+        items: [
+          { text: "Long 1", link: "/long-1" },
+          { text: "Long 2", link: "/long-2" },
+        ],
+      },
+      {
+        text: "Gigantic pages",
+        items: [
+          { text: "Giga 1", link: "/giga-1" },
+          { text: "Giga 2", link: "/giga-2" },
+        ],
+      },
+    ],
+  },
   vite: {
     plugins: [
       Icons({
